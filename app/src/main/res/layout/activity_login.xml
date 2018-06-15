@@ -1,0 +1,154 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#fff"
+    tools:context="com.bizsoft.pos.LoginActivity">
+
+    <!-- Login progress -->
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="0dp"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="264dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:background="@drawable/logo_one" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_username"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:text="admin"
+                    android:padding="10dp"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/password"
+                    android:text="admin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_password"
+                    android:imeActionId="@+id/login"
+                    android:imeActionLabel="@string/action_sign_in_short"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/email_sign_in_button"
+                style="?android:textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_weight="10"
+                android:background="@color/colorAccent"
+                android:text="@string/action_sign_in"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:layout_marginBottom="50dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:background="@drawable/denariusoft64"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:gravity="center"
+                android:padding="5dp"
+                android:textSize="30dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="@string/product_from"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+
+
+            <co.ceryle.radiorealbutton.RadioRealButtonGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/mode_group"
+                app:rrbg_animateDrawables_enter="overshoot"
+                app:rrbg_animateTexts_enter="overshoot"
+                app:rrbg_dividerColor="@color/colorAccent"
+                app:rrbg_dividerSize="1dp"
+                app:rrbg_radius="10dp"
+                app:rrbg_selectorColor="@color/colorPrimaryDark"
+                app:rrbg_selectorSize="6dp">
+
+                <co.ceryle.radiorealbutton.RadioRealButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/online"
+                    app:rrb_drawable="@drawable/internet"
+                    app:rrb_drawableHeight="36dp"
+                    app:rrb_drawablePadding="8dp"
+                    app:rrb_drawableWidth="36dp"
+                    app:rrb_ripple="true"
+                    app:rrb_rippleColor="@color/colorAccent"
+                    app:rrb_text="Online"
+                    app:rrb_textColor="@color/colorAccent"/>
+
+                <co.ceryle.radiorealbutton.RadioRealButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/offline"
+                    app:rrb_drawable="@drawable/no_internet"
+                    app:rrb_drawableGravity="right"
+                    app:rrb_drawableHeight="36dp"
+                    app:rrb_drawablePadding="8dp"
+                    app:rrb_drawableWidth="36dp"
+
+                    app:rrb_ripple="true"
+                    app:rrb_rippleColor="@color/colorAccent"
+                    app:rrb_text="Offline"
+                    app:rrb_textColor="@color/colorAccent"/>
+            </co.ceryle.radiorealbutton.RadioRealButtonGroup>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:layout_gravity="center"
+        android:id="@+id/login_progress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:visibility="gone" />
+
+
+</LinearLayout>

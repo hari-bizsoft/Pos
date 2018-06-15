@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#536dfe</color>
+    <color name="colorPrimaryDark">#495cc6</color>
+    <color name="colorAccent">#757575</color>
+    <color name="colorTextNormal">#536dfe</color>
+
+    <color name="red_700">#ea0202</color>
+    <color name="green">#fc0cdd09</color>
+    <color name="orange">#757575</color>
+    <color name="red">#d50000</color>
+    <color name="QRCodeBlackColor">#000</color>
+    <color name="QRCodeWhiteColor">#ffffff</color>
+    <color name="grey">#706b64</color>
+</resources>

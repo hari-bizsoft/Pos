@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single"
+        >
+
+        <item
+            android:id="@+id/customer"
+            android:icon="@drawable/ic_face_black_24dp"
+            android:title="Customer" />
+        <item
+            android:id="@+id/billing"
+            android:icon="@drawable/ic_attach_money_black_24dp"
+            android:title="Billing" />
+
+        <item
+            android:id="@+id/cart"
+            android:icon="@drawable/ic_shopping_cart_black_24dp"
+            android:title="Cart" />
+        <item
+            android:id="@+id/sales"
+            android:icon="@drawable/ic_attach_money_black_24dp"
+            android:title="Sales Report" />
+        <item
+            android:id="@+id/purchase"
+            android:icon="@drawable/ic_archive_black_24dp"
+            android:title="Purchase" />
+
+
+
+    </group>
+
+
+
+    <group android:checkableBehavior="single">
+
+            <item
+                android:id="@+id/category"
+                android:icon="@drawable/ic_view_module_black_24dp"
+                android:title="Category" />
+            <item
+                android:id="@+id/items"
+                android:icon="@drawable/ic_view_list_black_24dp"
+                android:title="Items" />
+            <item
+                android:id="@+id/stock"
+                android:icon="@drawable/ic_store_black_24dp"
+                android:title="Stock Home" />
+        <item
+            android:id="@+id/vendor"
+            android:icon="@drawable/vendorp"
+            android:title="Vendor/Supplier" />
+        <item
+            android:id="@+id/reports"
+            android:icon="@drawable/excel_icon"
+            android:title="Reports" />
+
+        <item
+            android:id="@+id/settings"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="Settings" />
+
+    </group>
+
+
+
+</menu>
